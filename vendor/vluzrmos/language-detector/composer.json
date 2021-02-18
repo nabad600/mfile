@@ -1,0 +1,49 @@
+{
+  "name": "vluzrmos/language-detector",
+  "description": "Detect the language for your application using browser preferences, subdomains or route prefixes.",
+  "keywords": [
+    "Laravel",
+    "Lumen",
+    "Locale",
+    "Language",
+    "i18n"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vagner do Carmo",
+      "email": "vluzrmos@gmail.com"
+    }
+  ],
+  "type": "package",
+  "require": {
+    "php": "^7.2",
+    "illuminate/config": "~6.0 || ~7.0",
+    "illuminate/translation": "~6.0 || ~7.0",
+    "illuminate/support": "~6.0 || ~7.0",
+    "illuminate/cookie": "~6.0 || ~7.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.16",
+    "orchestra/testbench": "^5.0",
+    "phpunit/phpunit": "^8.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vluzrmos\\LanguageDetector\\": "src/"
+    },
+    "files": [
+      "src/Support/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Vluzrmos\\LanguageDetector\\Testing\\": "tests/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
